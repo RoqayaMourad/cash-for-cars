@@ -1,0 +1,36 @@
+.navbar {
+    width: 70%;
+    position:sticky;
+    top: 0;
+}
+.main {
+	background-image: url(../imgs/beautiful-young-woman-is-talking-handsome-car-mechanic-while-repair-car-dealership.jpg);
+	background-size:100% 100%;
+	background-repeat: no-repeat;
+}
+.main .form1 {
+	background-color: white;
+	border-radius: 2%;
+}
+#timer {
+    font-size: 3em;
+    font-weight: 100;
+    color: black;
+}
+
+#timer div {
+    display: inline-block;
+    min-width: 90px;
+}
+
+#timer div span {
+    color: black;
+    display: block;
+    font-size: .35em;
+    font-weight: 400;
+}
+.sticky-btn {
+    position:sticky;
+    bottom: 0;
+    left:0;
+}
