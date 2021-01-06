@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Redressed&display=swap');
 * {
     font-family: 'Roboto', sans-serif;
 }
@@ -5,7 +6,7 @@
     position:sticky;
     top: 0;
     z-index: 999;
-    background-color: #011126;
+    background-color: #2F4075;
     color: #ffffff;
 }
 .navbar-brand{
@@ -22,39 +23,36 @@
 .navbar p {
  padding-top: 15px;
 }
-.main {
+#header {
     background-image:url(../imgs/male-arm-suit-tie-cover-yellow-toy-car.jpg);	
     background-size:100% 100%;
-    background-repeat: no-repeat;
-    
+    background-repeat: no-repeat; 
+    color: #fff;  
 }
-.main .headline {
+.content {
     background-color:rgba(0, 0, 0,0.5);
     border-radius:2%;
 }
-.main .headline h1 {
-    font-size:60px;
-    color: #fff;  
+.form-head {
+    background-color: #2F4075;
+
 }
-.main .headline .subtext {
-    font-size:28px;  
-    margin-bottom: 0px;
-  color:  #fff;
+.form-container {
+    border-radius: 2px;
 }
-.main .headline p {
-    color: rgb(223, 219, 215);    
-}
-.main .form1 {
-    background-color: #5D8AA6;
-    border-radius: 2%;  
-}
-.main .form1 .form-headline {
-    font-size: 25px;
-    color: #fff;
+.form-container form {
+    background-color: #fff;
+    color: black;
 }
 .cta-btn {
     background-color:red;
     font-size: 20px;
+}
+.cta-sub{
+    font-size: 15px;
+    font-weight: 600;
+    line-height: .5;
+    letter-spacing: .1;
 }
 .sticky-btn {
     position: fixed;
@@ -63,39 +61,53 @@
     z-index: 11000;
 }
 
-.sale {
-    background-color: rgb(232, 236, 236);
+@media only screen and (max-width: 700px) {
+    #header {
+        background-color: antiquewhite;
+    }
+    
 }
-.sale p {
-    color: #011126;
-    font-size: 40px;
+
+.sale {
+    background-image: url(../imgs/1683.jpg);
+    background-size:100% 100%;
+    background-repeat: no-repeat; 
+}
+.sale-headline  {
+    color: #fff;
+    font-size: 80px;
+    font-family: 'Redressed', cursive;
+text-shadow: 6px 6px 0px rgba(0,0,0,0.2);
+
 }
 .sale .sm {
-    font-size: 20px;
+    font-size: 30px;
+    color: #fff; 
+    font-family: 'Redressed', cursive;
 }
 
 #timer {
-    font-size: 3.2em;
+    font-size: 5em;
     font-weight: 100;
-    color:#111126;
+    color:#fff;
 }
 
 #timer div {
     display: inline-block;
-    min-width: 90px;
-    color: #011126;
+    min-width: 150px;
+    color: #fff;
 }
 
 #timer div span {
-    color:#111126;
+    color:#fff;
     display: block;
-    font-size: .35em;
+    font-size: .3em;
     font-weight: 400;
 }
 .testimonials {
     background-color: rgb(195, 194, 194);
 }
 footer {
-    background-color: #011126;
+    background-color: #2F4075;
     color: #ffffff;
 }
