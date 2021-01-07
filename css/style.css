@@ -23,7 +23,7 @@
 .navbar p {
  padding-top: 15px;
 }
-#header {
+.header {
     background-image:url(../imgs/male-arm-suit-tie-cover-yellow-toy-car.jpg);	
     background-size:100% 100%;
     background-repeat: no-repeat; 
@@ -56,16 +56,9 @@
 }
 .sticky-btn {
     position: fixed;
-    bottom: 20px;
+    bottom:40px;
     left: 25px;
     z-index: 11000;
-}
-
-@media only screen and (max-width: 700px) {
-    #header {
-        background-color: antiquewhite;
-    }
-    
 }
 
 .sale {
@@ -111,3 +104,31 @@ footer {
     background-color: #2F4075;
     color: #ffffff;
 }
+
+.stickyphone {
+    width:100%;
+    background-color: red;   
+}
+.stickyphone a {
+    color: #fff;
+    font-size: 20px;
+
+}
+
+
+
+@media (max-width: 1200px) {
+    .header {
+        background-image: none;
+        background-color:#8999ca;
+    }
+    .form-container {
+        margin-top: 20px;
+    }
+    .stickyphone{
+      position: fixed;
+      right: 0;
+      left: 0;   
+      bottom: 0;
+    }      
+  }
