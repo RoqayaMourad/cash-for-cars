@@ -8,36 +8,42 @@
   <link rel="stylesheet" href="css/bootstrap.min.css">
   <link rel="stylesheet" href="css/style.css">
   <link rel="preconnect" href="https://fonts.gstatic.com">
-  <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet"> 
+  <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 
 <body class="">
-  <nav class="navbar py-0 m-auto">
-    <a class="navbar-brand" href="#"><img src="imgs/logo.png" width="150px" height="150px" alt=""></a>
-          <a href="tel:1-408-555-5555" class="full-text">Call us: 01-408-555-5555</a>
-          <a href="tel:1-408-555-5555" class="short-text">01-408-555-5555</a>
+  <nav class="navbar py-0 ">
+    <div class="logo d-flex align-items-center justify-content-between w-100">
+        <a class="navbar-brand" href="#"><img src="imgs/logo.png" width="150px" height="150px" alt=""></a>
+          <a href="tel:1-408-555-5555" class="full-text d-none d-md-block d-lg-block">Call us: 01-408-555-5555</a>
+          <a href="tel:1-408-555-5555" class="short-text d-block d-md-none d-lg-none">01-408-555-5555</a>
+    </div>
   </nav>
 
-  <div class="on-mobile d-none">
-    <div class="img-container .d-none ">
-      <img src="imgs/male-arm-suit-tie-cover-yellow-toy-car.jpg">
-      <div class="overlay">
-        <span>
-          <h4 class="p-4" >We Pay Top Cash For Junk &amp; Cars, Trucks and Vans.</h4></span>
+  <div class="row no-gutters h-auto">
+    <div class="on-mobile d-sm-block d-md-none d-lg-none">
+      <div class="img-container">
+        <img src="imgs/male-arm-suit-tie-cover-yellow-toy-car.jpg">
+        <div class="overlay">
+          <span>
+            <h4 class="">We Pay Top Cash For Junk &amp; Cars, Trucks and Vans.</h4></span>
+        </div>
       </div>
-    </div>
-    </div>
+      </div>
+  </div>
 
   <!-- header section -->
     <div class="header">
       <div class="container">
         <div class="row py-4">
-          <div class="col-lg-8 col-sm-12 content p-4 d-none d-sm-block">
+          <!-- desktop col -->
+          <div class="col-lg-8 col-sm-12 content p-4 d-none d-lg-block d-md-block">
             <h4 class="mb-3">We Pay Top Cash For Junk &amp; Cars, Trucks and Vans.</h4>
             <p class=""> Welcome to cashforcar . Getting rid of your junk car should be
               hassle free. At San Diego County Junk Car Removals We promise nothing less than an outstanding price for
-              your truck or car for Junk and high-quality convenient services to match. ItÂ’s easy to get a cash payment
+              your truck or car for Junk and high-quality convenient services to match. ItÂ&rsquo;s easy to get a cash payment
               for your used, Junk, wrecked, damaged or unwanted car or truck. We provide car removal services in San Diego
               County regions with top grade cash for car prices!
             </p>
@@ -55,7 +61,9 @@
               <li>Fast Payment Process, Cash Paid On The Spot</li>
             </ul>
           </div>
-          <div class="col-lg-4 col-sm-8 m-auto px-5" id="contact-sec">
+
+          <!-- form col -->
+          <div class="col-lg-4 col-sm-8 m-auto" id="contact-sec">
             <div class="form-container ">
               <div class="form-head p-3">
                 <h4 class="mb-0">Get your free instant evaluation</h4>
@@ -84,17 +92,43 @@
                   <br>
                   <span class="cta-sub">*We will respond as soon as possible</span>
                 </div>
-  
+
               </form>
               <div class="msg-block"></div>
             </div>
-  
+
           </div>
         </div>
-  
+
       </div>
     </div>
     <!-- /header section -->
+
+    <div class="row no-gutters">
+      <!-- mobile col -->
+      <div class="col-lg-8 col-sm-12 content p-4 on-mobile d-sm-block d-md-none d-lg-none">
+        <h4 class="mb-3">We Pay Top Cash For Junk &amp; Cars, Trucks and Vans.</h4>
+        <p class=""> Welcome to cashforcar . Getting rid of your junk car should be
+          hassle free. At San Diego County Junk Car Removals We promise nothing less than an outstanding price for
+          your truck or car for Junk and high-quality convenient services to match. ItÂ&rsquo;s easy to get a cash payment
+          for your used, Junk, wrecked, damaged or unwanted car or truck. We provide car removal services in San Diego
+          County regions with top grade cash for car prices!
+        </p>
+        <ul class="">
+          <li>Best Prices You Can Get Guaranteed</li>
+          <li>No Title? No Problems!</li>
+          <li>We Buy Any Car With Any Condition</li>
+          <li>Running Or Not - We'll Take It</li>
+          <li>We Buy Any Car Brand And Any Model</li>
+          <li>Sell Your Car 30 Minutes</li>
+          <li>Free Towing</li>
+          <li>Free Car Inspection</li>
+          <li>Free Pick Up Available</li>
+          <li>Minimum Paperwork Required</li>
+          <li>Fast Payment Process, Cash Paid On The Spot</li>
+        </ul>
+      </div>
+    </div>
 
 <!-- Sale Section -->
   <section class="sale py-4 text-center">
@@ -109,26 +143,26 @@
 
 <!-- Steps Section -->
 <section class="steps py-4 container-fluid">
-  <div class="row justify-content-center">
-    <div class="col-lg-3 col-md-6 col-12 row justify-content-center icon-content pt-4">
+  <div class="row justify-content-center overflow-hidden">
+    <div data-aos="fade-right" class="col-lg-3 col-md-6 col-12 row justify-content-center icon-content pt-4">
       <img class="icon" src="imgs/9nnc9Et.png">
         <div class="d-flex flex-column">
-            <p class="font-weight-bold"> Get<br> QUOTE</p> 
+            <p class="font-weight-bold"> Get<br> QUOTE</p>
         </div>
     </div>
-    <div class="col-lg-3 col-md-6 col-12 row justify-content-center icon-content pt-4">
+    <div  data-aos="fade-left" class="col-lg-3 col-md-6 col-12 row justify-content-center icon-content pt-4">
       <img src="imgs/013_-_Accept_offer-512.png" class="icon" alt="">
         <div class="d-flex flex-column">
             <p class="font-weight-bold"> Accept <br>OFFER	</p>
         </div>
     </div>
-    <div class="col-lg-3 col-md-6 col-12 row justify-content-center icon-content pt-4">
+    <div  data-aos="fade-right"  class="col-lg-3 col-md-6 col-12 row justify-content-center icon-content pt-4">
       <img src="imgs/Page_1-removebg-preview.png" class="icon" alt="">
         <div class="d-flex flex-column">
             <p class="font-weight-bold">FREE <br>TOWING</p>
         </div>
     </div>
-    <div class="col-lg-3 col-md-6 col-12 row justify-content-center icon-content pt-4">
+    <div  data-aos="fade-left" class="col-lg-3 col-md-6 col-12 row justify-content-center icon-content pt-4">
       <img src="imgs/9nnc9Et.png" class="icon" alt="">
         <div class="d-flex flex-column">
             <p class="font-weight-bold">Get <br>CASH</p>
@@ -146,7 +180,7 @@
       <h2 class="section-title mb-2 h1">What we do</h2>
       <p class="text-center text-light h5">We Pay Top Cash For Junk & Cars, Trucks, Vans And SUVs</p>
       <div class="row mt-5">
-        <div class=" col-sm-6 mb-4 col-md-4 col-lg-4 col-xl-4">
+        <div class="col-12 col-sm-6 mb-4 col-md-6 col-lg-4 col-xl-4">
           <div class="card h-100">
             <div class="card-block block-1">
               <h3 class="card-title">Quick and smooth cash</h3>
@@ -155,7 +189,7 @@
             </div>
           </div>
         </div>
-        <div class=" col-sm-6 mb-4 col-md-4 col-lg-4 col-xl-4">
+        <div class=" col-12 col-sm-6 mb-4 col-md-6 col-lg-4 col-xl-4">
           <div class="card h-100">
             <div class="card-block block-2">
               <h3 class="card-title">Hassle-free process</h3>
@@ -163,35 +197,31 @@
             </div>
           </div>
         </div>
-        <div class="col-xs-12 col-sm-6 mb-4 col-md-4 col-lg-4 col-xl-4">
+        <div class="col-12 col-sm-6 mb-4 col-md-6 col-lg-4 col-xl-4">
           <div class="card h-100">
             <div class="card-block block-3">
               <h3 class="card-title">Free car pickup and delivery</h3>
-              <p class="card-text">Another crucial advantage of a cash for car service is free car pickup and delivery every single time. This is to free you from all kinds of burden.</p
+              <p class="card-text">Another crucial advantage of a cash for car service is free car pickup and delivery every single time. This is to free you from all kinds of burden.</p>
             </div>
           </div>
         </div>
-      </div>
-      <div class="row m-auto">
-        <div class="col-xs-12 col-sm-6 mb-4 col-md-4 col-lg-4 col-xl-4">
+        <div class="col-12 col-sm-6 mb-4 col-md-6 col-lg-4 col-xl-4">
           <div class="card h-100">
             <div class="card-block block-4">
               <h3 class="card-title"> Any model, year or company</h3>
-              <p class="card-text">The cash for car service providers are least bothered about your car’s brand, make, year or model. They are only concerned about picking up your old car.</p>
-          
+              <p class="card-text">The cash for car service providers are least bothered about your car&rsquo;s brand, make, year or model. They are only concerned about picking up your old car.</p>
             </div>
           </div>
         </div>
-        <div class="col-xs-12 col-sm-6 mb-4 col-md-4 col-lg-4 col-xl-4">
+        <div class="col-12 col-sm-6 mb-4 col-md-6 col-lg-4 col-xl-4">
           <div class="card h-100">
             <div class="card-block block-5">
               <h3 class="card-title">No via media or middleman</h3>
               <p class="card-text">The best part of leveraging this service is there is not middleman involved. Simply strike a direct deal with your service provider. This will save you from paying out commissions and margins</p>
-       
             </div>
           </div>
         </div>
-        <div class="col-xs-12 col-sm-6 mb-4 col-md-4 col-lg-4 col-xl-4">
+        <div class="col-12 col-sm-6 mb-4 col-md-6 col-lg-4 col-xl-4">
           <div class="card h-100">
             <div class="card-block block-6">
               <h3 class="card-title">Free car inspection</h3>
@@ -199,17 +229,17 @@
             </div>
           </div>
         </div>
-      </div>
-    </div>	
+        </div>
+    </div>
   </section>
   <!-- /Services section -->
 
   <!-- why us section  -->
-  
+
  <section class="y-us-section py-4">
           <div class="container">
               <div class="row text-center pt-4">
-                  <div class="col-lg-12 col-md-8 col-md-offset-2 col-sm-12 col-xs-12">
+                  <div class="col-lg-12 col-md-8 col-md-2 col-sm-12">
                       <div class="y-us-head">
                           <div class="y-us-title mb-5 pt-3">
                               <h2 class="mb-4">Why choose us</h2>
@@ -258,7 +288,7 @@
                           </div>
                       </div>
                   </div>
-                  <div class="col-md-4 col-sm-6 col-xs-12">
+                  <div class="col-md-4 col-sm-6 col-xs-12 d-flex align-items-center justify-content-center">
                       <div class="why-choose-banner">
                           <img src="imgs/651.jpg" class="img-fluid" alt="">
                       </div>
@@ -372,7 +402,7 @@
                       <strong class="testimonial-name" itemprop="name">Anna Vandana</strong>
                      </div>
               </div>
-          </div>     
+          </div>
       </div>
   </div>
 </section>
@@ -389,7 +419,7 @@
   <div class="stickyphone text-center py-2">
     <a href="tel:1-408-555-5555"> <i class="fa fa-phone"></i>  01-408-555-5555</a>
   </div>
-
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
   <script src="js/jquery-3.5.1.slim.min.js"></script>
   <script src="js/popper.min.js"></script>
   <script src="js/bootstrap.min.js"></script>

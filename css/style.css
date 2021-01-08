@@ -14,9 +14,9 @@
  font-size: 22px;
  text-decoration:underline;
 }
-.navbar .short-text {
-    display: none;   
-}
+/* .navbar .short-text {
+    display: none;
+} */
 .header {
     background-image:url(../imgs/male-arm-suit-tie-cover-yellow-toy-car.jpg);	
     background-size:100% 100%;
@@ -27,24 +27,23 @@
     background-color:rgba(0, 0, 0,0.7);
     border-radius:2%;
 }
-.header .content h4 و .overlay span {
+.header .content h4 {
     font-size: 30px;
 }
 .header .content p {
     font-size:400 ;
     line-height: 1.7;
-
 }
-.header .content ul li {
+.header .content ul li{
     margin-bottom: 7px;
     font-size: 16px;
 }
 .form-head {
-    background-color: #2F4075;
+    background-color: red;
 
 }
 .form-container {
-    border-radius: 2px;
+    border-radius: 5%;
 }
 .form-container form {
     background-color: #fff;
@@ -62,8 +61,8 @@
 }
 .sticky-btn {
     position: fixed;
-    bottom:40px;
-    left: 25px;
+    bottom:20px;
+    left: 20px;
     z-index: 11000;
 }
 
@@ -243,18 +242,15 @@ footer {
     width: 75%;
 }
 .service-box .y-us-content h4 {
-    color: #3a3a3a;
-    font-size: 18px;
-    letter-spacing: 0;
-    line-height: 22px;
+    color: #000;
+    font-size:22px;
     margin: 14px 0 12px;
     text-transform: uppercase;
+    font-weight:600;
 }
 .service-3 .service-box .y-us-content p {
-    color: #777777;
-    font-size: 13px;
-    font-weight: 300;
-    line-height: 24px;
+    color: #646363;
+    font-size: 18px;
 }
 
 .y-us-section .icon {
@@ -385,13 +381,7 @@ footer {
       height: auto;
   }
 
-  @media (max-width: 1000px) {
-    .navbar .short-text {
-    display: inline-block;
-    }
-    .navbar .full-text {
-        display: none;
-    }
+  @media (max-width:768px) {
     .sale {
         background-image:url(../imgs/resize-1610056391613081751683.jpg);
         padding-top: 0px !important;
@@ -441,7 +431,7 @@ footer {
     }
     .header {
         background-image: none;
-        background-color:#8999ca;
+        background-color:#2f4075;
     }
     .header .row {
         padding-top: 0px !important;
@@ -460,12 +450,17 @@ footer {
       bottom: 0;
     }      
   }
-  @media (max-width: 360px){
-    .navbar a{
-        position: relative;
-        left: 25%;
-    }
+  @media (max-width:480px){
+   .navbar .logo {
+       flex-direction: column;
+   }
   }
+ 
+  /*
+1025px — 1200px: Desktops, large screens
+1201px and more —  Extra large screens, TV */
+
+
   .img-container{
     position:relative;
   }
@@ -477,9 +472,19 @@ footer {
     height:100%;
     background-color:rgba(0, 0, 0,0.7);
     text-align: center;
+    display: flex;
     align-items: center;
-    padding-top: 5%;
   }
-  .overlay span{
+  .overlay span h4{
     color:#fff;
+    font-size:35px !important;
   }
+
+  .on-mobile2 p {
+  font-size:400 ;
+  line-height: 1.7;
+}
+.on-mobile2 ul li{
+  margin-bottom: 7px;
+  font-size: 16px; 
+}

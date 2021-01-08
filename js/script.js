@@ -29,3 +29,10 @@ $(document).ready(function (){
         }, 400);
     });
 });
+
+  AOS.init();
+
+
+AOS.init({
+   duration: 1200, 
+} );
