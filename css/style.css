@@ -27,9 +27,8 @@
     background-color:rgba(0, 0, 0,0.7);
     border-radius:2%;
 }
-.header .content h4 {
+.header .content h4 و .overlay span {
     font-size: 30px;
-
 }
 .header .content p {
     font-size:400 ;
@@ -444,6 +443,9 @@ footer {
         background-image: none;
         background-color:#8999ca;
     }
+    .header .row {
+        padding-top: 0px !important;
+    }
     .form-container {
         margin-top: 20px;
     }
@@ -463,4 +465,21 @@ footer {
         position: relative;
         left: 25%;
     }
+  }
+  .img-container{
+    position:relative;
+  }
+  .img-container .overlay{
+    position:absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    background-color:rgba(0, 0, 0,0.7);
+    text-align: center;
+    align-items: center;
+    padding-top: 5%;
+  }
+  .overlay span{
+    color:#fff;
   }
