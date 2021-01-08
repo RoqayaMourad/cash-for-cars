@@ -1,5 +1,5 @@
 function updateTimer() {
-    future = Date.parse("jan 4, 2021 11:30:00");
+    future = Date.parse("jan 9, 2021 11:30:00");
     now = new Date();
     diff = future - now;
 
@@ -15,7 +15,17 @@ function updateTimer() {
 
     document.getElementById("timer")
         .innerHTML =
-        '<div>' + m + '<span>minutes</span></div>' +
-        '<div>' + s + '<span>seconds</span></div>';
+        '<div>' + m + '<span>min</span></div>' +
+        '<div>' + s + '<span>sec</span></div>';
 };
+
 setInterval('updateTimer()', 1000);
+
+$(document).ready(function (){
+    $("#scrollToFormBtn").click(function (){
+        console.log("Clicked");
+        $('html, body').animate({
+            scrollTop: $("#contact-sec").offset().top - 50
+        }, 400);
+    });
+});
